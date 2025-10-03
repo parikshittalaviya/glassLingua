@@ -110,7 +110,7 @@ def enhance_text_with_gemini(extracted_text):
     
     # Configure Gemini API
     # genai.configure(credentials=os.environ["GOOGLE_APPLICATION_CREDENTIALS"])
-    genai.configure(api_key="AIzaSyB2tSXMxCtG91z09Zsthwn1qPuNs79Wx68")
+    genai.configure(api_key="abcd_api")
     # Create a model instance
     model = genai.GenerativeModel("gemini-2.0-flash")
     
@@ -330,4 +330,5 @@ def main():
     text_to_speech(tts_client, translated_text, target_lang)
 
 if __name__ == "__main__":
+
     main()
